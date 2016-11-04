@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		AA088B4F1DBED4E0004D7501 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = AA088B4E1DBED4E0004D7501 /* GoogleService-Info.plist */; };
+		AA1B92CD1DC6A8AB0044DF35 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA1B92CC1DC6A8AB0044DF35 /* DetailViewController.swift */; };
+		AA7B18EA1DCA95210027B973 /* CustomTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA7B18E91DCA95210027B973 /* CustomTableViewCell.swift */; };
 		AA7C0AB01DC3C3FF00DE6202 /* ListTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA7C0AAF1DC3C3FF00DE6202 /* ListTableViewController.swift */; };
 		AA7C0AB61DC3C77400DE6202 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA7C0AB51DC3C77400DE6202 /* User.swift */; };
 		AA7C0AB81DC3C97F00DE6202 /* Sweet.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA7C0AB71DC3C97F00DE6202 /* Sweet.swift */; };
@@ -22,6 +24,8 @@
 		47B02E72D0A3C5FC9AA41DC6 /* Pods_IOS_Firebase.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_IOS_Firebase.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		89AA20ADE81593634B61343A /* Pods-IOS-Firebase.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-IOS-Firebase.release.xcconfig"; path = "Pods/Target Support Files/Pods-IOS-Firebase/Pods-IOS-Firebase.release.xcconfig"; sourceTree = "<group>"; };
 		AA088B4E1DBED4E0004D7501 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		AA1B92CC1DC6A8AB0044DF35 /* DetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
+		AA7B18E91DCA95210027B973 /* CustomTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomTableViewCell.swift; sourceTree = "<group>"; };
 		AA7C0AAF1DC3C3FF00DE6202 /* ListTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ListTableViewController.swift; sourceTree = "<group>"; };
 		AA7C0AB51DC3C77400DE6202 /* User.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		AA7C0AB71DC3C97F00DE6202 /* Sweet.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Sweet.swift; sourceTree = "<group>"; };
@@ -66,6 +70,7 @@
 			children = (
 				AA7C0AB51DC3C77400DE6202 /* User.swift */,
 				AA7C0AB71DC3C97F00DE6202 /* Sweet.swift */,
+				AA7B18E91DCA95210027B973 /* CustomTableViewCell.swift */,
 			);
 			name = Models;
 			sourceTree = "<group>";
@@ -75,6 +80,7 @@
 			children = (
 				AA8458601DBED1A2006EF256 /* ViewController.swift */,
 				AA7C0AAF1DC3C3FF00DE6202 /* ListTableViewController.swift */,
+				AA1B92CC1DC6A8AB0044DF35 /* DetailViewController.swift */,
 			);
 			name = Controllers;
 			sourceTree = "<group>";
@@ -252,6 +258,8 @@
 				AA7C0AB61DC3C77400DE6202 /* User.swift in Sources */,
 				AA7C0AB81DC3C97F00DE6202 /* Sweet.swift in Sources */,
 				AA7C0AB01DC3C3FF00DE6202 /* ListTableViewController.swift in Sources */,
+				AA7B18EA1DCA95210027B973 /* CustomTableViewCell.swift in Sources */,
+				AA1B92CD1DC6A8AB0044DF35 /* DetailViewController.swift in Sources */,
 				AA8458611DBED1A2006EF256 /* ViewController.swift in Sources */,
 				AA84585F1DBED1A2006EF256 /* AppDelegate.swift in Sources */,
 			);

@@ -11,7 +11,7 @@ import FirebaseDatabase
 
 struct Sweet {
     let key: String!
-    let content: String!
+    var content: String!
     let addedByUser: String!
     let itemRef: FIRDatabaseReference?
     
@@ -26,25 +26,29 @@ struct Sweet {
         key = snapShot.key
         itemRef = snapShot.ref
         
-//        if let sweetContent = snapShot.value["content"] as! [String : AnyObject] {
+//        for child in snapShot.children {
+//            let _child = child as! FIRDataSnapshot
+//            content = _child.value as! String!
+//        }
+        
+//        if let sweetContent = snapShot.children.value(forKey: "content") as? String{
 //            content = sweetContent
 //        }else{
 //            content = ""
 //        }
-//        
-//        if let sweetUser = snapShot.value as! [String : AnyObject] {
-//            addedByUser = sweetUser
-//        }else{
-//            addedByUser = ""
-//        }
         
-        if let sweetContent = snapShot.children.value(forKey: "contnet") as? String{
+        if let sweetContent = snapShot.childSnapshot(forPath: "content").value as? String {
             content = sweetContent
         }else{
             content = ""
         }
-        
-        if let sweetUser = snapShot.children.value(forKey: "addedByUser") as? String{
+                
+//        if let sweetUser = snapShot.children.value(forKey: "addedByUser") as? String{
+//            addedByUser = sweetUser
+//        }else{
+//            addedByUser = ""
+//        }
+        if let sweetUser = snapShot.childSnapshot(forPath: "addedByUser").value as? String {
             addedByUser = sweetUser
         }else{
             addedByUser = ""

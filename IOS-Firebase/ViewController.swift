@@ -15,6 +15,11 @@ class ViewController: UIViewController {
         let tableVC = ListTableViewController()
         self.navigationController?.pushViewController(tableVC, animated: true)
     }
+    
+    func goAutolayoutPage(){
+        let tableVC = DetailViewController()
+        self.navigationController?.pushViewController(tableVC, animated: true)
+    }
     override func viewDidLoad() {
         
         super.viewDidLoad()
@@ -40,7 +45,7 @@ class ViewController: UIViewController {
         button2.setTitle("Autolayout Page", for: .normal)
         button2.tintColor = UIColor.white
         button2.translatesAutoresizingMaskIntoConstraints = false
-//        button2.addTarget(self, action: #selector(ViewController.goAutolayoutPage), for: .touchUpInside)
+        button2.addTarget(self, action: #selector(ViewController.goAutolayoutPage), for: .touchUpInside)
         
         let button3 = UIButton(type: .custom)
         button3.backgroundColor = UIColor.orange

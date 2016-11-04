@@ -20,9 +20,9 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         FIRAuth.auth()?.signIn(withEmail: "richard@icloud.com", password: "123abc456", completion: { (user, error) in
     
             if error == nil {
-                print(user?.email)
+                print(user?.email ?? "Email")
             }else {
-                print(error)
+                print(error ?? "Please Enter Email")
             }
         })
         
